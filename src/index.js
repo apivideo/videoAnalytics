@@ -119,7 +119,7 @@ function createObject(array){
 }
 
 //testing on 3005
-app.listen(3005, () =>
+app.listen(process.env.PORT || 3005, () =>
   console.log('Example app listening on port 3005!'),
 );
 process.on('uncaughtException', function(err) {
